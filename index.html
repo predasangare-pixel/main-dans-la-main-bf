@@ -1,105 +1,265 @@
 
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#087443">
-  <title>Main dans la Main ❤️</title>
+
+  <title>Main dans la Main ❤️ | Solidarité</title>
+
+  <meta name="description" content="Main dans la Main-BF : une communauté de solidarité, d'entraide et de confiance au Burkina Faso et en Afrique.">
+
   <style>
-    * { box-sizing: border-box; }
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+
+    body {
       font-family: Arial, sans-serif;
       background: #f4f8f5;
       color: #183b2b;
+      line-height: 1.6;
     }
+
     header {
       background: #087443;
       color: white;
       text-align: center;
-      padding: 30px 15px;
+      padding: 35px 18px;
     }
-    header h1 { font-size: 27px; }
-    .heart { font-size: 38px; }
+
+    .heart {
+      font-size: 48px;
+      margin-bottom: 8px;
+    }
+
+    header h1 {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 16px;
+    }
+
+    nav {
+      background: #ffffff;
+      padding: 14px 10px;
+      text-align: center;
+      box-shadow: 0 2px 8px #00000010;
+    }
+
+    nav a {
+      color: #087443;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 10px;
+      font-size: 14px;
+    }
+
     main {
-      max-width: 650px;
+      max-width: 850px;
       margin: auto;
-      padding: 20px;
+      padding: 22px 16px;
     }
-    .welcome, .service {
+
+    .welcome {
+      background: #e5f4eb;
+      padding: 30px 22px;
+      border-radius: 16px;
+      text-align: center;
+      margin-bottom: 22px;
+    }
+
+    .welcome h2 {
+      color: #087443;
+      margin-bottom: 12px;
+    }
+
+    .service {
       background: white;
-      padding: 22px;
-      margin-bottom: 18px;
+      padding: 25px 22px;
+      margin-bottom: 20px;
       border-radius: 15px;
       box-shadow: 0 3px 12px #00000010;
     }
-    .service h2 { color: #087443; }
+
+    .service h2 {
+      color: #087443;
+      margin-bottom: 10px;
+    }
+
+    .service p {
+      margin-bottom: 14px;
+    }
+
     button {
       background: #087443;
       color: white;
-      border: 0;
+      border: none;
       border-radius: 9px;
-      padding: 13px 18px;
+      padding: 13px 20px;
       font-size: 16px;
-      margin: 5px 0;
+      font-weight: bold;
       cursor: pointer;
     }
-    footer {
+
+    button:hover {
+      background: #065b35;
+    }
+
+    .mission {
+      background: #ffffff;
+      border-left: 5px solid #087443;
+    }
+
+    .languages {
+      color: #087443;
+      font-weight: bold;
       text-align: center;
-      padding: 22px;
-      color: #557264;
+      padding: 12px;
+    }
+
+    footer {
+      background: #075b36;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 20px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 25px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 7px;
+      }
+
+      .service, .welcome {
+        padding: 20px 16px;
+      }
+
+      button {
+        width: 100%;
+      }
     }
   </style>
 </head>
+
 <body>
+
   <header>
     <div class="heart">❤️🤝</div>
-    <h1>Main dans la Main</h1>
+    <h1>Main dans la Main-BF</h1>
     <p>Ensemble, personne ne devrait être oublié.</p>
+    <p>La solidarité nous unit.</p>
   </header>
 
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#demander">Demander de l'aide</a>
+    <a href="#offrir">Offrir de l'aide</a>
+    <a href="#mission">Notre mission</a>
+  </nav>
+
   <main>
-    <section class="welcome">
-      <h2>Bienvenue dans notre communauté !</h2>
+
+    <section class="welcome" id="accueil">
+      <h2>Bienvenue dans notre communauté ! ❤️</h2>
+
       <p>
-        Un espace de solidarité et d'entraide pour le Burkina Faso
+        Main dans la Main-BF est un espace de solidarité,
+        de partage et d'entraide pour le Burkina Faso
         et toute l'Afrique.
       </p>
-      <p>Ensemble, aidons ceux qui en ont besoin.</p>
+
+      <p>
+        Une communauté où chacun peut donner,
+        recevoir et retrouver l'espoir.
+      </p>
     </section>
 
-    <section class="service">
+    <section class="service" id="demander">
       <h2>🤲 Demander de l'aide</h2>
-      <p>Tu as besoin de soutien ? Notre communauté est là.</p>
-      <button onclick="alert('Espace bientôt disponible ❤️')">
+
+      <p>
+        Tu traverses une difficulté ?
+        Tu as besoin de soutien ?
+        Notre communauté est là pour t'écouter.
+      </p>
+
+      <button onclick="alert('Espace de demande d’aide bientôt disponible ❤️')">
         Demander de l'aide
       </button>
     </section>
 
-    <section class="service">
+    <section class="service" id="offrir">
       <h2>💚 Offrir de l'aide</h2>
-      <p>Tu souhaites aider une personne dans le besoin ?</p>
-      <button onclick="alert('Espace bientôt disponible ❤️')">
+
+      <p>
+        Tu souhaites soutenir une personne,
+        partager tes compétences ou apporter
+        une contribution solidaire ?
+      </p>
+
+      <button onclick="alert('Espace pour proposer ton aide bientôt disponible ❤️')">
         Proposer mon aide
       </button>
     </section>
 
-    <section class="service">
+    <section class="service mission" id="mission">
       <h2>🌍 Notre mission</h2>
+
       <p>
-        Construire une communauté basée sur la solidarité,
-        la confiance et le respect.
+        Construire une grande communauté fondée
+        sur la solidarité, la confiance,
+        le respect et la fraternité.
       </p>
-      <p>Français • Dioula • Mooré</p>
+
+      <p>
+        Nous croyons qu'ensemble, nous pouvons
+        changer des vies et construire un avenir meilleur.
+      </p>
+
+      <p class="languages">
+        Français • Dioula • Moor
+        é
+      </p>
     </section>
+
+    <section class="service">
+      <h2>🤝 Notre engagement</h2>
+
+      <p>
+        Chaque geste compte.
+        Chaque personne mérite le respect.
+        Personne ne doit être oublié.
+      </p>
+
+      <p>
+        Main dans la Main, avançons ensemble !
+      </p>
+    </section>
+
   </main>
 
   <footer>
-    Main dans la Main ❤️<br>
-    La solidarité nous unit.
+    <p><strong>Main dans la Main-BF ❤️</strong></p>
+    <p>La solidarité nous unit.</p>
+    <p>Burkina Faso 🇧🇫</p>
+    <p>© 2026 Main dans la Main-BF</p>
   </footer>
+
 </body>
-  </html>
+    </html>
   
